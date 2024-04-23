@@ -26,7 +26,7 @@ def train_network():
 def get_notes():
     notes = []
 
-    for file in glob.glob("midi_songs/*.mid"):
+    for file in glob.glob("midi_files/*.mid"):
         midi = converter.parse(file)
 
         print("Parsing %s" % file)
